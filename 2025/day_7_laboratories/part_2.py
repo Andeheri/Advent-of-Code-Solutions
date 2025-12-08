@@ -15,11 +15,6 @@ beam_values[source_index] = 1
 
 active_beam_indexes = {source_index}
 
-
-def find_all_char_indexes(string: str, search_char: str) -> list[int]:
-    return {i for i, char in enumerate(string) if char == search_char}
-
-
 num_splits = 0
 for height, line in enumerate(lines[1:], start = 1):
     if splitter not in line:
